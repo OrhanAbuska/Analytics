@@ -8,13 +8,13 @@ require __DIR__ . '/vendor/autoload.php';
 
 // 2. Read-Only Google Analytics API infos
 $client = new Google_Client();
-$client->setAuthConfig(__DIR__ . '/mineral-prism-247414-b904bf35ba59.json');
+$client->setAuthConfig(__DIR__ . '/mineral-prism-247414-xxxxxxxxxxx.json');
 $client->setScopes(array('https://www.googleapis.com/auth/analytics.readonly'));
 
 // 3. Google Analytics account credentials.
 $analytics = new Google_Service_Analytics($client);
 
-$viewId = '171427037';
+$viewId = 'xxxxxxxxx';
 
 // 3.1 We are gathering the site information for the past 30 days. But we can choose specific days and months
 $generalResult = $analytics->data_ga->get( // -> getting 2nd clients analytics

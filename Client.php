@@ -1,0 +1,5 @@
+<?php
+
+$devKey = '';
+$clientid = '';
+$clientsecret = '';

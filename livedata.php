@@ -8,16 +8,16 @@ require __DIR__ . '/vendor/autoload.php';
 
 // 2. Read-Only Google Analytics API infos -> You can change the json file with yours
 $client = new Google_Client();
-$client->setAuthConfig(__DIR__ . '/mineral-prism-247414-b904bf35ba59.json');
+$client->setAuthConfig(__DIR__ . '/mineral-prism-247414-xxxxxxxxxxx.json');
 $client->setScopes(array('https://www.googleapis.com/auth/analytics.readonly'));
 
 // 3. Google Analytics account credentials. 
 
 $analytics = new Google_Service_Analytics($client);
 
- // $viewId = '170242873' is my own websites ID number. You can change it to whatever site you want.
+ // $viewId = 'xxxxxxx' is my own websites ID number. You can change it to whatever site you want.
 
-$viewId = '171427037'; 
+$viewId = 'xxxxxxxx'; 
 
 // 3.2 Real Time live analytics info scraping
 $rtResult = $analytics->data_realtime->get(
